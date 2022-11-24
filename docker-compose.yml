@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  sub_extractor:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: subsExtractor
+    restart: unless-stopped
+    volumes:
+      - /home/tim/disk-media/media/complete:/app/watchFolder
+    environment:
+      PYTHONUNBUFFERED: 1
