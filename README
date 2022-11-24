@@ -1,0 +1,4 @@
+Python script that watches folder for new *.mkv files (for new files and already existing) then extract subtitles from them.
+
+Run with: 
+`docker-compose up`
